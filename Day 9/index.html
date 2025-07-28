@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src="./tsrtc.jpeg" height="70" width="70">
+        <h2 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+        <h3>GENERAL BUS PASS APPLICATION</h3>
+    </center>
+    <form action="./submit.html">
+    <fieldset>
+        <legend><b>Applicant Details</b></legend>
+        <label for="Name">Name:</label>
+        <input type="text" name="Name"id="Name" autocomplete="disabled" required>
+        <label for="Father name">Father's/Guardian's Name:</label>
+        <input type="text" name="Father name" id="Father name" autocomplete="disabled" required>
+        <br><br>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" name="DOB" id="DOB"required>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="Gender"id="Gender"required>
+        <label for="Gender">Male</label>
+        <input type="radio" name="Gender" id="Gender"required>
+        <label for="Gender">Female</label>
+        <br><br>
+        <label for="Age_years">Age as on:</label>
+        <input type="tel" name="Age_years" id="Age_years" style="width: 20px;"required >
+        <label for="Age_years">Years(s)</label>
+        <input type="tel" name="Age_years" id="Age_years" style="width: 20px;"required>
+        <label for="Age_years">Month(s)</label>
+        <input type="tel" name="Age_years"id="Age_years" style="width: 20px;"required>
+        <label for="Age_years">Day(s)</label>
+        <label for="Adhaar no">Adhaar No:</label>
+        <input type="tel" name="Adhaar no" id="Adhaar no" required>
+        <br><br>
+        <label for="Whatsapp no">WhatsApp No:</label>
+        <input type="tel" name="Whatsapp no"id="Whatsapp no" required>
+        <label for="Email id">E-mail id:</label>
+        <input type="text" name="Email id"id="Email id" autocomplete="disabled" required>
+        <br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" name="photo" id="photo" accept=".png,.jpg" required>
+        <br><br>
+    </fieldset>
+    <fieldset>
+                <legend><b>Residential Address Details</b></legend>
+                <label for="Application Details">Application Details:</label>
+                <textarea  name="Application Details" id="Application Details" rows="8" cols="30" required></textarea>
+                <label for="District">District</label>
+                <select name="District" id="District" required>
+                <option value="Select" disabled selected>Select</option>
+                <option value="HYDERABAD">HYDERABAD</option>
+                <option value="WARANGAL">WARANGAL</option>
+                <option value="KARIMNAGAR">KARIMNAGAR</option>
+                </select>
+                <br><br>
+                <label for="Mandal">Mandal:</label>
+                <select name="Mandal" id="Mandal"required>
+                 <option value="Select" disabled selected>Select</option>
+                 <option value ="HYDERABAD">HYDERABAD</option>
+                 <option value="GOLCONDA">GOLCONDA</option>
+                 <option value="SAIDABAD">SAIDABAD</option>
+                </select>
+                <label for="Village">Village:</label>
+                <select name="Village"id="Village"required>
+                  <option value="Select"  disabled selected>Select</option>
+                  <option value="HYDERABAD">HYDERABAD</option>
+                  <option value="SHAMSHABAD">SHAMSHABAD</option>
+                  <option value="RAJENDRANAGAR">RAJENDRANAGAR</option>
+                </select>
+                <br><br>
+                <label for="Pincode">Pincode:</label>
+                <input type="tel" name="Pincode" id="Pincode" autocomplete="disabled" required>
+    </fieldset>
+    <fieldset>
+        <legend><b>Pass Type Details</b></legend>
+        <label for="City">City:</label>
+        <select name="City"id="City" required>
+            <option value="Select" disabled selected>Select</option>
+            <option value="HYDERABAD">HYDERABAD</option>
+        </select>
+         <br><br>
+            <label for="Pass type">Pass Type:</label>
+            <select name="pass type" id="Pass type" required>
+              <option value="----Select----">----Select----</option>
+              <option value="ORDINARY PASS">ORDINARY PASS</option>
+              <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+              <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+            </select>
+            <br><br>
+    </fieldset>
+    <fieldset>
+        <legend><b>Mode of Payment & Pass Collection</b></legend>
+        <label for="Payment mode">Payment Mode:</label>
+        <select name="Payment mode" id="Payment mode" required>
+            <option value="Select Payment Mode" disabled selected>Select Payment Mode</option>
+            <option value="Payment at Counter">Payment at Counter</option>
+        </select>
+        <br><br>
+        <label for="Pass Delivery">Pass Delivery Mode</label>
+        <select name="Pass Delivery" id="Pass Delivery" required>
+            <option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+            <option value="At Counter">At Counter</option>
+        </select>
+        <label for="collect pass">Center at Which you want to collect pass</label>
+        <select name="collect pass" id="collect pass" required>
+            <option value="Select" disabled selected>Select</option>
+            <option value="RTC UPPAL X ROAD --HYD[29/07/2025]">RTC UPPAL X ROAD --HYD[29/07/2025]</option>
+            <option value="RTC UPPAL --HYD[29/07/2025]">RTC UPPAL --HYD[29/07/2025]</option>
+            <option value="RTC SHAMSHABAD--HYD[29/07/2025]">RTC SHAMSHABAD--HYD[29/07/2025]</option>
+        </select>
+    </fieldset>
+    <center>
+    <img src="./Screenshot 2025-07-28 182225.png" width="200px">
+    <br><br>
+    <label for="captcha">Enter Captcha:</label>
+    <input type="text"  name="Captcha" id="captcha" required>
+    <br><br>
+    <input type="submit" style="background-color: rgb(229, 100, 100);color:white" value="submit" >
+    </center>
+    </form>
+</body>
+</html>
